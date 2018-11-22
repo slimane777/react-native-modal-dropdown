@@ -214,7 +214,7 @@ export default class ModalDropdown extends Component {
                                     onPress={this._onModalPress}
           >
             <View style={styles.modal}>
-              <View style={[styles.dropdown, dropdownStyle, frameStyle]}>
+              <View style={[styles.dropdown, dropdownStyle, frameStyle, { width: '70%', left: 65, }]}>
                 {loading ? this._renderLoading() : this._renderDropdown()}
               </View>
             </View>
